@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Package definition",
+  "description": "Information about a Stew package",
+  "type": "object",
+  "x-taplo-info": {
+    "authors": ["Sting Alleman <https://github.com/stingalleman>"],
+    "version": "0.0.1",
+    "patterns": [".*octocat.toml$"]
+  },
+  "properties": {
+    "package": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "license": {
+          "description": "Must be a SPDX-valid ID (see https://spdx.org/licenses/)",
+          "type": "string"
+        },
+        "version": {
+          "description": "Version that Stew will automatically install. Must also be in `availableVersions`.",
+          "type": "string"
+        },
+        "homepage": {
+          "type": "string"
+        },
+        "HEAD": {
+          "description": "",
+          "type": "string"
+        },
+        "availableVersions": {
+          "description": "Available versions",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": ["name", "description", "license", "version"]
+    }
+  },
+  "required": ["package"]
+}
