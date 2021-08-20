@@ -13,7 +13,7 @@ The Community repository is inspired from Arch Linux's AUR. Everybody can publis
 
 ## Central Git repository (core)
 
-Hosted on GH. Contains the packages, package definitions, and metadata & package scripts for every specific version.
+Hosted on GH. Contains the packages, package definitions, metadata & package scripts for every specific version.
 
 All scripts should be executables.
 
@@ -42,6 +42,8 @@ A mirror hosts all the binaries. There are two tiers of mirrors, tier 1 and tier
   - High bandwidth, storage and computing power. Sync directly from the official Stew mirror. Mirrors must be selected.
 - Tier 2 mirrors
   - Sync from tier 1 mirrors.
+
+Everybody can start a tier 2 mirror, but you must submit it to become a official mirror.
 
 ```txt
 - :repository
