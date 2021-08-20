@@ -1,35 +1,47 @@
 # spec
 
-## Central Git repository
-
-Hosted on GH. Contains the packages, package definitions, and metadata & package scripts for every specific version.
-
-All scripts should be executables.
-
-Every repository has a seperate Git repository. The repositories are:
+Packages available in Stew are seperated in 2 repositories. These are:
 
 - core
   - core-testing
 - community
   - community-testing
 
+The Core repository is maintained by Stew contributors and has the most important packages, like programming languages, compilers, the most-used tools and more.
+
+The Community repository is inspired from Arch Linux's AUR. Everybody can publish packages to the Community repository, and people can vote out packages if they are duplicates, malware, etc. Stew has first-party support for the Community repository, but it must be enabled by the user.
+
+## Central Git repository (core)
+
+Hosted on GH. Contains the packages, package definitions, and metadata & package scripts for every specific version.
+
+All scripts should be executables.
+
 ```txt
-- :package-name
-  - package.toml (package metadata)
-  - :version
-    - metadata.toml (version metadata)
-    - package (script to make package)
-    - preinstall (script that runs before install)
-    - postinstall (script that runs after install)
-  - :version
-    - metadata.toml
-    - package
-    - preinstall
-    - postinstall
-  ...
+- packages
+  - :package-name
+    - package.toml (package metadata)
+    - :version
+      - metadata.toml (version metadata)
+      - package (script to make package)
+      - preinstall (script that runs before install)
+      - postinstall (script that runs after install)
+    - :version
+      - metadata.toml
+      - package
+      - preinstall
+      - postinstall
+    ...
 ```
 
 ## Decentralized mirror
+
+A mirror hosts all the binaries. There are two tiers of mirrors, tier 1 and tier 2 mirrors.
+
+- Tier 1 mirrors
+  - High bandwidth, storage and computing power. Sync directly from the official Stew mirror. Mirrors must be selected.
+- Tier 2 mirrors
+  - Sync from tier 1 mirrors.
 
 ```txt
 - :repository
