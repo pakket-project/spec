@@ -6,7 +6,7 @@ Hosted on GH. Contains the packages, package definitions, and metadata & package
 
 All scripts should be executables.
 
-Repositories are:
+Every repository has a seperate Git repository. The repositories are:
 
 - core
   - core-testing
