@@ -1,15 +1,15 @@
 # spec
 
-Packages available in Stew are seperated in 2 repositories. These are:
+Packages available in Pakket are seperated in 2 repositories. These are:
 
 - core
   - core-testing
 - community
   - community-testing
 
-The Core repository is maintained by Stew contributors and has the most important packages, like programming languages, compilers, the most-used tools and more.
+The Core repository is maintained by Pakket contributors and has the most important packages, like programming languages, compilers, the most-used tools and more.
 
-The Community repository is inspired from Arch Linux's AUR. Everybody can publish packages to the Community repository, and people can vote out packages if they are duplicates, malware, etc. Stew has first-party support for the Community repository, but it must be enabled by the user.
+The Community repository is inspired from Arch Linux's AUR. Everybody can publish packages to the Community repository, and people can vote out packages if they are duplicates, malware, etc. Pakket has first-party support for the Community repository, but it must be enabled by the user.
 
 ## Central Git repository (core)
 
@@ -39,7 +39,7 @@ All scripts should be executables.
 A mirror hosts all the binaries. There are two tiers of mirrors, tier 1 and tier 2 mirrors.
 
 - Tier 1 mirrors
-  - High bandwidth, storage and computing power. Sync directly from the official Stew mirror. Mirrors must be selected.
+  - High bandwidth, storage and computing power. Sync directly from the official Pakket mirror. Mirrors must be selected.
 - Tier 2 mirrors
   - Sync from tier 1 mirrors.
 

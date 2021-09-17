@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Package definition",
-  "description": "Information about a Stew package",
+  "description": "Information about a Pakket package",
   "type": "object",
   "x-taplo-info": {
     "authors": ["Sting Alleman <https://github.com/stingalleman>"],
@@ -23,7 +23,7 @@
           "type": "string"
         },
         "version": {
-          "description": "Version that Stew will automatically install. Must also be in `availableVersions`.",
+          "description": "Version that Pakket will automatically install. Must also be in `availableVersions`.",
           "type": "string"
         },
         "homepage": {
