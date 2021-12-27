@@ -29,10 +29,6 @@
         "homepage": {
           "type": "string"
         },
-        "HEAD": {
-          "description": "",
-          "type": "string"
-        },
         "availableVersions": {
           "description": "Available versions",
           "type": "array",
